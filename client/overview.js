@@ -1,6 +1,6 @@
 var evaluationHelper = {
 	evaluation() {
-		return Evaluaties.find()
+		return Evaluaties.find({}, {sort: {date: -1}})
 	}
 }
 
