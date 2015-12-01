@@ -1,6 +1,6 @@
 Template.form.events({
 	'input .numberField': function(event, template) {
-		var student = Studenten.findOne({number: template.fields.number.value})
+		var student = Studenten.findOne({number: template.fields.number.value.toLowerCase()})
 		if (student == undefined) {
 			student = {name: '', familyName: ''}
 		}

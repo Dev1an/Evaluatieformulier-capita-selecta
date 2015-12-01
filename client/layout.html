@@ -18,7 +18,7 @@
 </template>
 
 <template name="banner">
-	<div id="primaryContainer" class="primaryContainer clearfix">
+	<div id="bannerContainer" class="bannerContainer clearfix">
 		<div id="box" class="clearfix">
 				<p id="text">
 				Evaluatie
@@ -32,4 +32,24 @@
 			{{> Template.dynamic template=content}}
 		</div>
 	</div>
+</template>
+
+<template name="qrLayout">
+	<div id="qrContainer" class="qrContainer clearfix">
+		<div id="clipper">
+			<div class="ui middle aligned grid container">
+				<div class="eight wide column">
+					<img src="img/code.svg" class="image" />
+					<h2 class="ui inverted center aligned header">
+						http&#x3a;&#x2f;&#x2f;vraag.ga
+					</h2>
+				</div>
+				<div class="eight wide column">
+					<div id="messageBox">
+						{{> Template.dynamic template=content}}
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>  
 </template>

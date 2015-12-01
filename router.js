@@ -15,3 +15,9 @@ FlowRouter.route('/overview', {
 		BlazeLayout.render('blankLayout', {content: 'overview'})
 	}
 })
+
+FlowRouter.route('/qr', {
+	action() {
+		BlazeLayout.render('qrLayout', {content: 'shortOverview'})
+	}
+})
