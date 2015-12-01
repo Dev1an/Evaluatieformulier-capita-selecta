@@ -1,41 +1,40 @@
 <template name="overview">
 	<h1>Overview</h1>
-	<table class="ui table">
-		<thead>
-			<th>Naam</th>
-			<th>Algemeen Concept</th>
-			<th>De spreker</th>
-			<th>De inhoud</th>
-			<th>De mediacampagne</th>
-			<th>Wat hij/zij bijleerde</th>
-			<th>Vraag 1</th>
-			<th>Vraag 2</th>
-		</thead>
-		<tbody>
-			{{#each evaluation}}
-				<tr>
-					<td>{{name}} {{familyName}}</td>
-					<td>
-						<p><b>score</b> {{r1}}/5</p>
-						<p>{{a1}}</p>
-					</td>
-					<td>
-						<p><b>score</b> {{r2}}/5</p>
-						<p>{{a2}}</p>
-					</td>
-					<td>
-						<p><b>score</b> {{r3}}/5</p>
-						<p>{{a3}}</p>
-					</td>
-					<td>
-						<p><b>score</b> {{r4}}/5</p>
-						<p>{{a4}}</p>
-					</td>
-					<td> <p>{{a5}}</p> </td>
-					<td> <p>{{a6}}</p> </td>
-					<td> <p>{{a7}}</p> </td>
-				</tr>
-			{{/each}}
-		</tbody>
-	</table>
+
+	{{#each evaluation}}
+		<div class="ui segments">
+			<div class="ui inverted blue segment">
+				<h3>{{name}} {{familyName}} <em>{{number}}</em></h3>
+			</div>
+			<div class="ui segment">
+				<h4>Algemeen Concept</h4>
+				<p><em>Score {{r1}}/5</em></p>
+				<p>{{a1}}</p>
+
+				<h4>De spreker</h4>
+				<p><em>Score {{r2}}/5</em></p>
+				<p>{{a2}}</p>
+
+				<h4>De inhoud</h4>
+				<p><em>Score {{r3}}/5</em></p>
+				<p>{{a3}}</p>
+
+				<h4>De mediacampagne</h4>
+				<p><em>Score {{r4}}/5</em></p>
+				<p>{{a4}}</p>
+
+				<h4>Wat hij/zij bijleerde</h4>
+				<p>{{a5}}</p>
+
+				<h4>Vraag 1</h4>
+				<p>{{a6}}</p>
+
+				<h4>Vraag 2</h4>
+				<p>{{a7}}</p>
+			</div>
+		</div>
+	{{/each}}
+
+	<div class="ui hidden divider"></div>
+
 </template>
