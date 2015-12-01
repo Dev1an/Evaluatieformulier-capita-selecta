@@ -1,0 +1,35 @@
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="initial-scale = 1.0,maximum-scale = 1.0">
+	<script>var __adobewebfontsappname__ = "reflow"</script>
+	<script src="https://use.edgefonts.net/raleway:n1,n7,n4,n5,n3,n8,n9,n2,n6:all.js"></script>
+	<meta property="og:url" content="https://vraag.ga/" />
+	<meta property="og:title" content="Evaluatieformulier: capita selecta" />
+	<meta property="og:type" content="website" />
+	<meta property="og:description" content="Evalueer de lezing over artificial intelligence en machine learning" />
+	<meta property="og:image" content="http://vraag.ga/img/Unknown1300.png" />
+</head>
+
+<template name="blankLayout">
+	<div class="ui container">
+		<div class="ui hidden divider"></div>
+		{{> Template.dynamic template=content}}
+	</div>
+</template>
+
+<template name="banner">
+	<div id="primaryContainer" class="primaryContainer clearfix">
+		<div id="box" class="clearfix">
+				<p id="text">
+				Evaluatie
+				</p>
+				<p id="text1">
+				Machine learning — Artificial intelligence
+				</p>
+		</div>
+
+		<div id="box1" class="clearfix">
+			{{> Template.dynamic template=content}}
+		</div>
+	</div>
+</template>

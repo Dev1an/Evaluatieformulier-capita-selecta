@@ -1,0 +1,41 @@
+<template name="overview">
+	<h1>Overview</h1>
+	<table class="ui table">
+		<thead>
+			<th>Naam</th>
+			<th>Algemeen Concept</th>
+			<th>De spreker</th>
+			<th>De inhoud</th>
+			<th>De mediacampagne</th>
+			<th>Wat hij/zij bijleerde</th>
+			<th>Vraag 1</th>
+			<th>Vraag 2</th>
+		</thead>
+		<tbody>
+			{{#each evaluation}}
+				<tr>
+					<td>{{name}} {{familyName}}</td>
+					<td>
+						<p><b>score</b> {{r1}}/5</p>
+						<p>{{a1}}</p>
+					</td>
+					<td>
+						<p><b>score</b> {{r2}}/5</p>
+						<p>{{a2}}</p>
+					</td>
+					<td>
+						<p><b>score</b> {{r3}}/5</p>
+						<p>{{a3}}</p>
+					</td>
+					<td>
+						<p><b>score</b> {{r4}}/5</p>
+						<p>{{a4}}</p>
+					</td>
+					<td> <p>{{a5}}</p> </td>
+					<td> <p>{{a6}}</p> </td>
+					<td> <p>{{a7}}</p> </td>
+				</tr>
+			{{/each}}
+		</tbody>
+	</table>
+</template>

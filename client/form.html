@@ -1,0 +1,85 @@
+<template name="form">
+	<div style="position: relative" class="ui two column middle aligned very relaxed stackable grid">
+		<div class="column">
+			<div class="ui form">
+				<div class="field">
+					<label>Studentennummer (r-nummer)</label>
+					<div class="ui fluid left icon input">
+						{{#field "number"}}<input type="text" placeholder="r0345678">{{/field}}
+						<i class="user icon"></i>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="ui vertical divider">Of</div>
+		<div class="column">
+			<div class="ui form">
+				<div class="field">
+					<label>Voornaam</label>
+					<div class="ui fluid input">
+						{{#field "name"}}<input type="text" placeholder="Damiaan">{{/field}}
+					</div>
+				</div>
+				<div class="field">
+					<label>Achternaam</label>
+					<div class="ui fluid input">
+						{{#field "familyName"}}<input type="text" placeholder="Dufaux">{{/field}}
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+	<div class="ui form">
+		<div class="ui divider"></div>
+
+		<p id="text2">
+		Geef een indicatie van zeer slecht tot zeer goed, om je oordeel te geven over onderstaande uitspraken. Bij deze beoordeling geef je bijkomende commentaar over het waarom van je quotering.<br />
+		</p>
+
+		<h3>​Ik vond het (concept van het) seminarie in het algemeen ...</h3>
+		<div class="sticking field">
+			{{> ratingButtons "r1"}}
+			{{#field "a1"}}<textarea rows="3"></textarea>{{/field}}
+		</div>
+
+		<h3>​Ik vond de spreker ...</h3>
+		<div class="sticking field">
+			{{> ratingButtons "r2"}}
+			{{#field "a2"}}<textarea rows="3"></textarea>{{/field}}
+		</div>
+
+		<h3>​​Ik vond de inhoud boeiend</h3>
+		<div class="sticking field">
+			{{> ratingButtons "r3"}}
+			{{#field "a3"}}<textarea rows="3"></textarea>{{/field}}
+		</div>
+
+		<h3>​Wat vond je van de (social) mediacampagne van je medestudenten?</h3>
+		{{> ratingButtons "r4"}}
+		<h4>Beschrijf wat of hoe je iets merkte van de campagne</h4>
+		<div class="field">
+			{{#field "a4"}}<textarea rows="3"></textarea>{{/field}}
+		</div>
+
+		<h3>​​Dit leerde ik bij • dit verbaasde mij • overige opmerkingen</h3>
+		<div class="field">
+			{{#field "a5"}}<textarea rows="3"></textarea>{{/field}}
+		</div>
+
+		<h3>​​Wat is een perceptron?</h3>
+		<div class="field">
+			{{#field "a6"}}<textarea rows="3"></textarea>{{/field}}
+		</div>
+
+		<h3>​​Wat is het verschil tussen hierarchical multi-label classification en binary classification?</h3>
+		<div class="field">
+			{{#field "a7"}}<textarea rows="3"></textarea>{{/field}}
+		</div>
+
+		<button class="ui green button">Indienen</button>
+	</div>
+
+	<div class="ui divider"></div>
+</template>

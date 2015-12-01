@@ -1,0 +1,26 @@
+<template name="ratingButtons">
+    <div class="ui five buttons">
+      <button class="ui button one   {{selection 1}}">
+      	{{#switchCompact}} 1 {{else}} Zeer slecht {{/switchCompact}}
+      </button>
+      <button class="ui button two   {{selection 2}}">
+      	{{#switchCompact}} 2 {{else}} Slecht {{/switchCompact}}
+      </button>
+      <button class="ui button three {{selection 3}}">
+      	{{#switchCompact}} 3 {{else}} Gematigd {{/switchCompact}}
+      </button>
+      <button class="ui button four  {{selection 4}}">
+      	{{#switchCompact}} 4 {{else}} Goed {{/switchCompact}}
+      </button>
+      <button class="ui button five  {{selection 5}}">
+      	{{#switchCompact}} 5 {{else}} Zeer goed {{/switchCompact}}
+      </button>
+    </div>
+</template>
+
+<template name="switchCompact">
+	<span class="compactSwitch">
+		<span class="compact">{{> Template.contentBlock}}</span>
+		<span>{{> Template.elseBlock}}</span>
+	</span>
+</template>

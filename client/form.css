@@ -1,0 +1,137 @@
+body, h1, h2, h3, h4 {
+    font-family: raleway;
+}
+
+.primaryContainer {
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
+    min-height: 100%;
+    width: 100%;
+}
+
+#text {
+    float: none;
+    font-size: 5em;
+    width: auto;
+    height: auto;
+    text-align: center;
+    font-weight: 200;
+    line-height: 1em;
+    margin-left: 1em;
+    margin-top: 67px;
+    clear: none;
+    min-height: 0px;
+    margin-right: 1em;
+    color: rgb(217, 241, 249);
+}
+
+#box {
+    float: left;
+    height: 260px;
+    margin-left: 0%;
+    margin-top: 0px;
+    clear: none;
+    width: 100%;
+    background-color: #061D2D;
+    background-image:url("img/Unknown.png");
+    background-attachment: scroll;
+    -webkit-background-size: cover;
+    background-size: cover;
+    background-position: 50% 50%;
+    background-repeat: repeat repeat;
+}
+
+#text1 {
+    float: none;
+    font-size: 1.2em;
+    width: auto;
+    height: auto;
+    text-align: center;
+    font-weight: 500;
+    line-height: 1em;
+    margin-left: 1em;
+    margin-top: 24px;
+    clear: none;
+    min-height: 0px;
+    margin-right: 1em;
+    color: rgb(143, 199, 228);
+}
+
+body {
+    font-size: 1em;
+    font-weight: 500;
+    line-height: 1.2em;
+    color: rgb(16, 69, 93);
+}
+
+.ui.form .field > label, .ui.divider {
+    color: rgb(16, 69, 93);
+}
+
+.ui.form .field .ui.five.buttons .button:first-child {
+    border-bottom-left-radius: 0;
+}
+
+.ui.form .field .ui.five.buttons .button:last-child {
+    border-bottom-right-radius: 0;
+}
+
+.ui.form .sticking.field textarea {
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+}
+
+#box1 {
+    float: left;
+    height: 252px;
+    margin: 4.8em 0px 0px 8.54%;
+    clear: both;
+    width: 82.934769%;
+}
+
+@media only screen and (max-width: 900px) {
+    #box {
+        background-image:url("img/Unknown.png");
+        background-attachment: scroll;
+        -webkit-background-size: auto 717px;
+        background-size: auto 717px;
+        background-position: 50% 50%;
+        background-repeat: repeat repeat;
+    }
+
+    #box1 {
+        margin-top: 8.54%;
+    }
+}
+
+@media only screen and (max-width: 495px) {
+    #text {
+        font-size: 3em;
+    }
+
+    #box {
+        height: 232px;
+    }
+
+    #text1 {
+        margin-top: 11px;
+    }
+
+    #text2 {
+        clear: both;
+    }
+}
+
+@media only screen and (max-width: 300px) {
+    #text {
+        font-size: 1.5em;
+        font-weight: 300;
+    }
+
+    #text1 {
+        font-size: 1em;
+        font-weight: 400;
+    }
+}
+
